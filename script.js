@@ -13,8 +13,6 @@ document.querySelector('#cart-btn').onclick = () => {
     navbar.classList.remove('active');
     searchForm.classList.remove('active');
 } 
-
-
 let searchForm = document.querySelector('.search-form');
 
 document.querySelector('#search-btn').onclick = () => {
@@ -23,9 +21,12 @@ document.querySelector('#search-btn').onclick = () => {
     navbar.classList.remove('active');
 } 
 
-
 window.onscroll = () => {
     navbar.classList.remove('active');
     searchForm.classList.remove('active');
     cartItem.classList.remove('active');
 }
+
+
+
+

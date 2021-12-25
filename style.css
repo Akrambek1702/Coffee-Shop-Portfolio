@@ -71,13 +71,13 @@ section {
 }
 
 .header .logo img{
-  height: 6rem;
+    height: 6rem;
 }
 
 .header .navbar a{
-   margin: 0 1rem;
-   font-size: 1.6rem;
-   color: #fff;
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: #fff;
 }
 
 .header .navbar a:hover {
@@ -94,7 +94,7 @@ section {
 }
 
 .header .icons div:hover {
-  color: var(--main-color);
+    color: var(--main-color);
 }
 
 #menu-btn {
@@ -112,7 +112,7 @@ section {
 }
 
 .btn:hover {
-  letter-spacing: .2rem;
+    letter-spacing: .2rem;
 }
 
 .header .search-form {
@@ -154,10 +154,12 @@ section {
 .header .cart-items-container {
     position: absolute;
     top: 100%; right: -100%;
-    height: calc(100vh - 9.5rem);
+    height: calc(100vh - 9.5rem);   
     width: 35rem;
     background: #fff;
     padding: 0 1.5rem;
+    overflow: auto;
+    padding-bottom: 2rem;
 } 
 
 .header .cart-items-container.active {
@@ -204,9 +206,8 @@ section {
     text-align: center;
 }
 
-
-
 /* media queries  */
+
 @media (max-width: 991px){
     html{
         font-size: 55%;
@@ -248,7 +249,7 @@ section {
       right: 2rem;
   }
 
-  .home {
+.home {
       background-position: left;
       justify-content: center;
       text-align: center;
@@ -401,7 +402,12 @@ section {
 }
 
 .products .box-container .box .image img {
+    transform: rotateY(30deg) translateY(25px); 
     height: 25rem;
+}
+.products .box-container .box .image img:hover {
+    transform: rotate(0deg) translateY(0px); 
+
 }
 
 .products .box-container .box .content h3 { 
@@ -445,16 +451,16 @@ section {
 }
 
 .review .box-container .box .user {
-   height: 7rem;
-   width: 7rem;
-   border-radius: 50%;
-   object-fit: cover;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .review .box-container .box h3 {
-  padding: 1rem 0;
-  font-size: 2rem;
-  color: #fff;
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: #fff;
 }
 
 .review .box-container .box .stars i {
@@ -533,10 +539,12 @@ section {
     height: 100%;
     object-fit: cover;
     width: 100%;
+    transform: rotate(45deg) translateY(100px); 
 }
 
 .blogs .box-container .box:hover .image img {
-    transform: scale(1.2);
+    transform: rotate(0deg) translateY(0px); 
+    transition: 1s;
 }
 
 .blogs .box-container .box .content {
@@ -550,21 +558,21 @@ section {
 }
 
 .blogs .box-container .box .content .title:hover {
-  color: var(--main-color);
+    color: var(--main-color);
 }
 
 .blogs .box-container .box .content span {
     color: var(--main-color);
     display: block;
-    padding-top: 1rem;
+    padding-top: 1rem; 
     font-size: 2rem;
 }
 
 .blogs .box-container .box .content p {
-   font-size: 1.6rem;
-   line-height: 1.8;
-   color: #ccc;
-   padding: 1rem 0;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #ccc;
+    padding: 1rem 0;
 }
 
 .footer {
