@@ -62,7 +62,7 @@ section {
     background: var(--bg);
     display: flex;
     align-items: center;
-    position: fixed;
+    position: sticky;
     justify-content: space-between;
     padding: 1.5rem 7%;
     border-bottom: var(--border);
